@@ -1,0 +1,483 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V9.30.1.3056 for 8051                03/Nov/2017  19:06:05
+# Copyright 2004-2015 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        C:\Texas Instruments\Z-Stack 3.0.0\Components\mt\MT_GP.c
+#    Command line       =  
+#        -f "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
+#        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f "C:\Texas
+#        Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFFFF
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 -DDEFAULT_KEY={0} -DMAC_MAX_FRAME_SIZE=116
+#        -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const __code"
+#        -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000
+#        -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100 -DREJOIN_POLL_RATE=440
+#        -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000 -DENABLE_LED4_DISABLE_S1)
+#        -f "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        "C:\Texas Instruments\Z-Stack 3.0.0\Components\mt\MT_GP.c" -D SECURE=1
+#        -D TC_LINKKEY_JOIN -D NV_INIT -D NV_RESTORE -D xPOWER_SAVING -D
+#        NWK_AUTO_POLL -D xZTOOL_P1 -D xMT_TASK -D xMT_APP_FUNC -D xMT_SYS_FUNC
+#        -D xMT_ZDO_FUNC -D xMT_ZDO_MGMT -D xMT_APP_CNF_FUNC -D
+#        LEGACY_LCD_DEBUG -D LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D
+#        ZCL_READ -D ZCL_WRITE -D ZCL_BASIC -D ZCL_IDENTIFY -D ZCL_SCENES -D
+#        ZCL_GROUPS -lC "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List"
+#        -lA "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List"
+#        --diag_suppress Pe001,Pa010 -o "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -I "C:\Texas
+#        Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\" -I
+#        "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\Source\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\Source\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\bdb\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\gp\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes
+#    List file          =  
+#        C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List\MT_GP.lst
+#    Object file        =  
+#        C:\Texas Instruments\Z-Stack
+#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj\MT_GP.r51
+#
+###############################################################################
+
+C:\Texas Instruments\Z-Stack 3.0.0\Components\mt\MT_GP.c
+      1          /***************************************************************************************************
+      2            Filename:       MT_GP.c
+      3            Revised:        $Date: 2016-06-21 01:06:52 -0700 (Thu, 21 July 2016) $
+      4            Revision:       $Revision:  $
+      5          
+      6            Description:    MonitorTest functions GP interface.
+      7          
+      8            Copyright 2007-2013 Texas Instruments Incorporated. All rights reserved.
+      9          
+     10            IMPORTANT: Your use of this Software is limited to those specific rights
+     11            granted under the terms of a software license agreement between the user
+     12            who downloaded the software, his/her employer (which must be your employer)
+     13            and Texas Instruments Incorporated (the "License"). You may not use this
+     14            Software unless you agree to abide by the terms of the License. The License
+     15            limits your use, and you acknowledge, that the Software may not be modified,
+     16            copied or distributed unless embedded on a Texas Instruments microcontroller
+     17            or used solely and exclusively in conjunction with a Texas Instruments radio
+     18            frequency transceiver, which is integrated into your product. Other than for
+     19            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     20            works of, modify, distribute, perform, display or sell this Software and/or
+     21            its documentation for any purpose.
+     22          
+     23            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     24            PROVIDED ?AS IS? WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     25            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     26            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     27            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     28            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     29            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     30            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     31            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     32            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     33            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     34          
+     35            Should you have any questions regarding your right to use this Software,
+     36            contact Texas Instruments Incorporated at www.TI.com.
+     37          
+     38           ***************************************************************************************************/
+     39          
+     40          /***************************************************************************************************
+     41           * INCLUDES
+     42           ***************************************************************************************************/
+     43           
+     44           
+     45          #include "ZComDef.h"
+     46          #include "MT.h"
+     47          #include "MT_GP.h"
+     48          #include "MT_UART.h"
+     49          
+     50          
+     51          /***************************************************************************************************
+     52          * CONST
+     53          ***************************************************************************************************/
+     54          #define GP_DATA_REQ_PAYLOAD_LEN_POS   17   
+     55          #define GP_DATA_REQ_APP_ID_POS         2
+     56          
+     57          #define SEC_KEY_LEN                   16
+     58           
+     59          /***************************************************************************************************
+     60          * LOCAL FUNCTIONs
+     61          ***************************************************************************************************/
+     62             
+     63          #if defined (MT_GP_CB_FUNC)
+     64          static void MT_GpDataReq(uint8* pBuf);
+     65          static void MT_GpSecRsp(uint8* pBuf);
+     66          
+     67          void MT_GPDataCnf(gp_DataCnf_t* gp_DataCnf);
+     68          void MT_GPSecReq(gp_SecReq_t* gp_SecReq);
+     69          void MT_GPDataInd(gp_DataInd_t* gp_DataInd);
+     70          #endif
+     71          
+     72          
+     73          /***************************************************************************************************
+     74          * External variables
+     75          ***************************************************************************************************/
+     76          
+     77          #if defined (MT_GP_CB_FUNC)
+     78          uint8 MT_GpCommandProcessing(uint8 *pBuf)
+     79          {
+     80            uint8 status = MT_RPC_SUCCESS;
+     81          
+     82            switch (pBuf[MT_RPC_POS_CMD1])
+     83            {
+     84          //GP_UPDATE
+     85              case MT_GP_DATA_REQ:
+     86                MT_GpDataReq(pBuf);
+     87              break;
+     88              case MT_GP_SEC_RSP:
+     89                MT_GpSecRsp(pBuf);
+     90              break;
+     91          
+     92          
+     93            }
+     94            return status;
+     95          }
+     96          
+     97          
+     98           /***************************************************************************************************
+     99           * @fn      MT_GpDataReq
+    100           *
+    101           * @brief   GP data request interface
+    102           *
+    103           * @param   pBuf - gp data request
+    104           *
+    105           * @return  void
+    106           ***************************************************************************************************/
+    107           static void MT_GpDataReq(uint8* pBuf)
+    108          {
+    109            uint8 retValue = ZSuccess;
+    110            uint8 cmdId;
+    111            gp_DataReq_t *gp_DataReq;
+    112            uint8  payloadLen;
+    113          
+    114          
+    115            /* parse header */
+    116            cmdId = pBuf[MT_RPC_POS_CMD1];
+    117            pBuf += MT_RPC_FRAME_HDR_SZ;
+    118          
+    119            //Get the payload length
+    120            payloadLen = pBuf[GP_DATA_REQ_PAYLOAD_LEN_POS];
+    121            
+    122            gp_DataReq = (gp_DataReq_t*)osal_msg_allocate(sizeof(gp_DataReq_t) + payloadLen);  
+    123          
+    124            //No memory
+    125            if(gp_DataReq == NULL)
+    126            {
+    127              retValue = FAILURE;
+    128            }
+    129            //Invalid application ID
+    130            if( (pBuf[GP_DATA_REQ_APP_ID_POS] != GP_APP_ID_DEFAULT) && (pBuf[GP_DATA_REQ_APP_ID_POS] != GP_APP_ID_GP ) )
+    131            {
+    132              retValue = INVALIDPARAMETER;
+    133            }
+    134            //Return fail/InvalidParameter
+    135            if(retValue)
+    136            {
+    137              /* Build and send back the response */
+    138              MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_SRSP | (uint8)MT_RPC_SYS_GP), cmdId, 1, &retValue);
+    139              return;
+    140            }
+    141            
+    142          
+    143            gp_DataReq->Action = *pBuf++;
+    144            gp_DataReq->TxOptions = *pBuf++;
+    145            gp_DataReq->gpd_ID.AppID = *pBuf++;
+    146            if(gp_DataReq->gpd_ID.AppID == GP_APP_ID_DEFAULT)
+    147            {
+    148              gp_DataReq->gpd_ID.GPDId.SrcID = osal_build_uint32(pBuf,4);
+    149              pBuf += sizeof(uint32) + Z_EXTADDR_LEN;
+    150            }
+    151            else
+    152            {
+    153              pBuf += sizeof(uint32);
+    154              osal_memcpy(gp_DataReq->gpd_ID.GPDId.GPDExtAddr,pBuf,Z_EXTADDR_LEN);
+    155              pBuf += Z_EXTADDR_LEN;
+    156            }
+    157          
+    158            gp_DataReq->EndPoint = *pBuf++;
+    159            gp_DataReq->GPDCmmdId = *pBuf++;
+    160            gp_DataReq->GPDasduLength = *pBuf++;
+    161            osal_memcpy(gp_DataReq->GPDasdu,pBuf,payloadLen);
+    162            pBuf += payloadLen;
+    163            gp_DataReq->GPEPhandle = *pBuf++;
+    164            gp_DataReq->gpTxQueueEntryLifeTime[2] = *pBuf++;
+    165            gp_DataReq->gpTxQueueEntryLifeTime[1] = *pBuf++;
+    166            gp_DataReq->gpTxQueueEntryLifeTime[0] = *pBuf++;
+    167            
+    168            gp_DataReq->hdr.event = GP_DATA_REQ;
+    169            gp_DataReq->hdr.status = 0;
+    170          
+    171            osal_msg_send(gp_TaskID,(uint8*)gp_DataReq);
+    172          
+    173            /* Build and send back the response */
+    174            MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_SRSP | (uint8)MT_RPC_SYS_GP), cmdId, 1, &retValue);
+    175          }
+    176          
+    177          
+    178          
+    179          /***************************************************************************************************
+    180          * @fn      MT_GpSecRsp
+    181          *
+    182          * @brief   GP Sec Response interface
+    183          *
+    184          * @param   pBuf - gp sec rsp
+    185          *
+    186          * @return  void
+    187          ***************************************************************************************************/
+    188          
+    189          void MT_GpSecRsp(uint8 *pBuf)
+    190          {
+    191          
+    192            uint8 retValue = ZSuccess;
+    193            uint8 cmdId;
+    194            gp_SecRsp_t *gp_SecRsp;
+    195            
+    196            /* parse header */
+    197            cmdId = pBuf[MT_RPC_POS_CMD1];
+    198            pBuf += MT_RPC_FRAME_HDR_SZ;
+    199            
+    200            gp_SecRsp = (gp_SecRsp_t*)osal_msg_allocate(sizeof(gp_SecRsp_t));
+    201            
+    202              //No memory
+    203            if(gp_SecRsp == NULL)
+    204            {
+    205              retValue = FAILURE;
+    206            }
+    207            //Invalid application ID
+    208            if( (pBuf[GP_DATA_REQ_APP_ID_POS] != GP_APP_ID_DEFAULT) && (pBuf[GP_DATA_REQ_APP_ID_POS] != GP_APP_ID_GP ) )
+    209            {
+    210              retValue = INVALIDPARAMETER;
+    211            }
+    212            //Return fail/InvalidParameter
+    213            if(retValue)
+    214            {
+    215              /* Build and send back the response */
+    216              MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_SRSP | (uint8)MT_RPC_SYS_GP), cmdId, 1, &retValue);
+    217              return;
+    218            }
+    219            
+    220            gp_SecRsp->Status = *pBuf++;
+    221            gp_SecRsp->dGPStubHandle = *pBuf++;
+    222            gp_SecRsp->gpd_ID.AppID = *pBuf++;
+    223            if(gp_SecRsp->gpd_ID.AppID == GP_APP_ID_DEFAULT)
+    224            {
+    225              gp_SecRsp->gpd_ID.GPDId.SrcID = osal_build_uint32(pBuf,4);
+    226              pBuf += sizeof(uint32) + Z_EXTADDR_LEN;
+    227            }
+    228            else
+    229            {
+    230              pBuf += sizeof(uint32);
+    231              osal_memcpy(gp_SecRsp->gpd_ID.GPDId.GPDExtAddr,pBuf,Z_EXTADDR_LEN);
+    232              pBuf += Z_EXTADDR_LEN;
+    233            }
+    234            gp_SecRsp->EndPoint = *pBuf++;
+    235            gp_SecRsp->gp_SecData.GPDFSecLvl = *pBuf++;
+    236            gp_SecRsp->gp_SecData.GPDFKeyType = *pBuf++; 
+    237            osal_memcpy(gp_SecRsp->GPDKey,pBuf,SEC_KEY_LEN);
+    238            pBuf += SEC_KEY_LEN;
+    239            gp_SecRsp->gp_SecData.GPDSecFrameCounter = osal_build_uint32(pBuf,4);
+    240            
+    241            gp_SecRsp->hdr.event = GP_SEC_RSP;
+    242            gp_SecRsp->hdr.status = 0;
+    243            
+    244            osal_msg_send(gp_TaskID,(uint8*)gp_SecRsp);
+    245          
+    246            /* Build and send back the response */
+    247            MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_SRSP | (uint8)MT_RPC_SYS_GP), cmdId, 1, &retValue);
+    248          }
+    249          
+    250          /***************************************************************************************************
+    251          * @fn      MT_GPDataInd
+    252          *
+    253          * @brief   Send GP Data Ind to Host Processor
+    254          *
+    255          * @param   gp_DataInd
+    256          *
+    257          * @return  void
+    258          ***************************************************************************************************/
+    259          void MT_GPDataInd(gp_DataInd_t* gp_DataInd)
+    260          {
+    261            uint8 *pBuf = NULL;
+    262            uint8 *tempBuf = NULL;
+    263            uint8 bufLen = sizeof(gp_DataInd_t) + gp_DataInd->GPDasduLength - 1;
+    264            
+    265            pBuf = osal_mem_alloc(bufLen);
+    266          
+    267            if(pBuf == NULL)
+    268            {
+    269              return;
+    270            }
+    271          
+    272            tempBuf = pBuf;
+    273            
+    274            *pBuf++ = gp_DataInd->status;
+    275            *pBuf++ = gp_DataInd->Rssi;
+    276            *pBuf++ = gp_DataInd->LinkQuality;  
+    277            *pBuf++ = gp_DataInd->SeqNumber;  
+    278            *pBuf++ = gp_DataInd->srcAddr.addrMode;
+    279            *pBuf++ = LO_UINT16(gp_DataInd->srcPanID);
+    280            *pBuf++ = HI_UINT16(gp_DataInd->srcPanID);
+    281            
+    282             pBuf   = osal_cpyExtAddr( pBuf,gp_DataInd->srcAddr.addr.extAddr);
+    283            *pBuf++ = gp_DataInd->appID;
+    284            *pBuf++ = gp_DataInd->GPDFSecLvl;
+    285            *pBuf++ = gp_DataInd->GPDFKeyType;
+    286            *pBuf++ = gp_DataInd->AutoCommissioning;
+    287            *pBuf++ = gp_DataInd->RxAfterTx;
+    288          
+    289            UINT32_TO_BUF_LITTLE_ENDIAN(pBuf,gp_DataInd->SrcId);
+    290            *pBuf++ = gp_DataInd->EndPoint;
+    291            UINT32_TO_BUF_LITTLE_ENDIAN(pBuf,gp_DataInd->GPDSecFrameCounter);
+    292            *pBuf++ = gp_DataInd->GPDCmmdID;
+    293            *pBuf++ = gp_DataInd->GPDasduLength;
+    294            osal_memcpy(pBuf,gp_DataInd->GPDasdu,gp_DataInd->GPDasduLength);
+    295            pBuf += gp_DataInd->GPDasduLength;
+    296            UINT32_TO_BUF_LITTLE_ENDIAN(pBuf,gp_DataInd->MIC);  
+    297            
+    298            MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_AREQ | (uint8)MT_RPC_SYS_GP), MT_GP_DATA_IND, 36 + gp_DataInd->GPDasduLength - 1, tempBuf);
+    299          
+    300            osal_mem_free(tempBuf);
+    301            
+    302          }
+    303          
+    304          
+    305          
+    306          
+    307          /***************************************************************************************************
+    308          * @fn      MT_GPDataCnf
+    309          *
+    310          * @brief   Send GP Data Cnf to Host Processor
+    311          *
+    312          * @param   gp_DataCnf
+    313          *
+    314          * @return  void
+    315          ***************************************************************************************************/
+    316          void MT_GPDataCnf(gp_DataCnf_t* gp_DataCnf)
+    317          {
+    318            uint8 buf[2];
+    319            uint8 *pBuf = buf;
+    320          
+    321            *pBuf++ = gp_DataCnf->status;
+    322            *pBuf++ = gp_DataCnf->GPEPhandle;
+    323          
+    324            MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_AREQ | (uint8)MT_RPC_SYS_GP), MT_GP_DATA_CNF, 2, buf);
+    325          }
+    326          
+    327          /***************************************************************************************************
+    328          * @fn      MT_GPSecReq
+    329          *
+    330          * @brief   Send GP Sec Req to Host Processor
+    331          *
+    332          * @param   gp_SecReq
+    333          *
+    334          * @return  void
+    335          ***************************************************************************************************/
+    336          void MT_GPSecReq(gp_SecReq_t* gp_SecReq)
+    337          {
+    338            uint8 buf[21];
+    339            uint8 *pBuf = buf;
+    340          
+    341          
+    342            *pBuf++ = gp_SecReq->gpd_ID.AppID;
+    343          
+    344            UINT32_TO_BUF_LITTLE_ENDIAN(pBuf,gp_SecReq->gpd_ID.GPDId.SrcID);
+    345            pBuf   = osal_cpyExtAddr( pBuf,gp_SecReq->gpd_ID.GPDId.GPDExtAddr);
+    346            *pBuf++ = gp_SecReq->EndPoint;  
+    347            *pBuf++ = gp_SecReq->gp_SecData.GPDFSecLvl;
+    348            *pBuf++ = gp_SecReq->gp_SecData.GPDFKeyType;
+    349          
+    350            UINT32_TO_BUF_LITTLE_ENDIAN(pBuf,gp_SecReq->gp_SecData.GPDSecFrameCounter);
+    351          
+    352            *pBuf++ = gp_SecReq->dGPStubHandle;
+    353          
+    354            MT_BuildAndSendZToolResponse(((uint8)MT_RPC_CMD_AREQ | (uint8)MT_RPC_SYS_GP), MT_GP_SEC_REQ, 21, buf);
+    355          }
+    356          
+    357          
+    358          
+    359          #endif
+    360          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none
