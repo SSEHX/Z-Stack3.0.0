@@ -218,6 +218,7 @@ uint8 OnBoard_SendKeys( uint8 keys, uint8 state )
   if ( registeredKeysTaskID != NO_TASK_ID )
   {
     // Send the address to the task
+    //将指针指向分配的缓冲区
     msgPtr = (keyChange_t *)osal_msg_allocate( sizeof(keyChange_t) );
     if ( msgPtr )
     {

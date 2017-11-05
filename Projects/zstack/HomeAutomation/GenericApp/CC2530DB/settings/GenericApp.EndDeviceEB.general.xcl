@@ -1,10 +1,10 @@
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051proc.dll" 
+"E:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051proc.dll" 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051emu_cc.dll" 
+"E:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051emu_cc.dll" 
 
-"C:\Texas Instruments\Z-Stack 3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Exe\GenericApp.d51" 
+"C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Exe\GenericApp.d51" 
 
---plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051bat.dll" 
+--plugin "E:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\bin\8051bat.dll" 
 
 
 

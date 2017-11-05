@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR C/C++ Compiler V9.30.1.3056 for 8051                03/Nov/2017  19:06:18
+# IAR C/C++ Compiler V9.30.1.3056 for 8051                05/Nov/2017  14:39:05
 # Copyright 2004-2015 IAR Systems AB.
 # Standalone license - IAR Embedded Workbench for 8051
 #
@@ -12,14 +12,13 @@
 #    Dptr setup         =  1,16
 #                          
 #    Source file        =  
-#        C:\Texas Instruments\Z-Stack 3.0.0\Components\stack\zdo\ZDConfig.c
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Components\stack\zdo\ZDConfig.c
 #    Command line       =  
-#        -f "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+#        -f
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg
 #        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
-#        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f "C:\Texas
-#        Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg
 #        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
 #        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFFFF
 #        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
@@ -34,85 +33,81 @@
 #        -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000
 #        -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100 -DREJOIN_POLL_RATE=440
 #        -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000 -DENABLE_LED4_DISABLE_S1)
-#        -f "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
-#        "C:\Texas Instruments\Z-Stack 3.0.0\Components\stack\zdo\ZDConfig.c"
+#        -f
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Components\stack\zdo\ZDConfig.c
 #        -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D NV_RESTORE -D
 #        xPOWER_SAVING -D NWK_AUTO_POLL -D xZTOOL_P1 -D xMT_TASK -D
 #        xMT_APP_FUNC -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D xMT_ZDO_MGMT -D
 #        xMT_APP_CNF_FUNC -D LEGACY_LCD_DEBUG -D LCD_SUPPORTED=DEBUG -D
 #        MULTICAST_ENABLED=FALSE -D ZCL_READ -D ZCL_WRITE -D ZCL_BASIC -D
-#        ZCL_IDENTIFY -D ZCL_SCENES -D ZCL_GROUPS -lC "C:\Texas
-#        Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List"
-#        -lA "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List"
-#        --diag_suppress Pe001,Pa010 -o "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj"
+#        ZCL_IDENTIFY -D ZCL_SCENES -D ZCL_GROUPS -lC
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List
+#        -lA
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List
+#        --diag_suppress Pe001,Pa010 -o
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj
 #        -e --debug --core=plain --dptr=16,1 --data_model=large
 #        --code_model=banked --calling_convention=xdata_reentrant
-#        --place_constants=data_rom --nr_virtual_regs 16 -I "C:\Texas
-#        Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\" -I
-#        "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\Source\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\Source\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\ZMain\TI2530DB\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\include\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\include\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mt\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\osal\include\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\saddr\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\sdata\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\af\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\bdb\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\gp\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sec\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sys\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\"
-#        -I "C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        --place_constants=data_rom --nr_virtual_regs 16 -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\Source\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\Source\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\ZMain\TI2530DB\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\include\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\include\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\high_level\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\mt\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\osal\include\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\saddr\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\services\sdata\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\af\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\bdb\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\gp\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\nwk\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sapi\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sec\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\sys\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zcl\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\stack\zdo\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\
+#        -I
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\..\..\..\..\..\Components\zmac\f8w\
 #        -Ohz --require_prototypes
 #    List file          =  
-#        C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List\ZDConfig.lst
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\List\ZDConfig.lst
 #    Object file        =  
-#        C:\Texas Instruments\Z-Stack
-#        3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj\ZDConfig.r51
+#        C:\Users\admin\Desktop\github\z-stack3.0.0\Projects\zstack\HomeAutomation\GenericApp\CC2530DB\EndDeviceEB\Obj\ZDConfig.r51
 #
 ###############################################################################
 
-C:\Texas Instruments\Z-Stack 3.0.0\Components\stack\zdo\ZDConfig.c
+C:\Users\admin\Desktop\github\z-stack3.0.0\Components\stack\zdo\ZDConfig.c
       1          /**************************************************************************************************
       2            Filename:       ZDConfig.c
       3            Revised:        $Date: 2013-05-07 13:02:49 -0700 (Tue, 07 May 2013) $

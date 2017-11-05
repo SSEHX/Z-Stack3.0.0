@@ -9,7 +9,11 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=1748756505
+Checksum=745372060
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -17,16 +21,10 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[CallStack]
-ShowArgs=0
-[Disassembly]
-MixedMode=1
 [Breakpoints]
-Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\..\Components\hal\target\CC2530EB\hal_key.c}.245.5" 1 0 0 0 "" 0 ""
-Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\..\..\..\..\Components\hal\target\CC2530EB\hal_key.c}.236.5" 1 0 0 0 "" 0 ""
-Count=2
+Count=0
 [ChipconEmu]
-Stop timers on halt=1
+Stop timers on halt=0
 Leave target running=1
 [Aliases]
 Count=0

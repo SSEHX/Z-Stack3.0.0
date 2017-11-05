@@ -349,14 +349,17 @@ void HalKeyPoll (void)
     if (keys == halKeySavedKeys)
     {
       /* Exit - since no keys have changed */
+      //退出 如果按键没有改变
       return;
     }
     /* Store the current keys for comparation next time */
+    //下次存储当前按键进行比较
     halKeySavedKeys = keys;
   }
   else
   {
     /* Key interrupt handled here */
+      //关键中断在这里处理
   }
 
   if (HAL_PUSH_BUTTON1())
@@ -365,9 +368,11 @@ void HalKeyPoll (void)
   }
 
   /* Invoke Callback if new keys were depressed */
+  //如果新键被按下，则调用回调
   if (pHalKeyProcessFunction
 #ifdef HAL_LEGACY_KEYS
     && keys //in legacy modes, only report key presses and do not report when a key is released
+            // 在传统模式下，只报告按键，并且在按钮被释放时不报告
 #endif
     )
   {
@@ -491,6 +496,7 @@ uint8 HalKeyExitSleep ( void )
 
 /***************************************************************************************************
  *                                    INTERRUPT SERVICE ROUTINE
+                                            中断服务函数
  ***************************************************************************************************/
 
 /**************************************************************************************************
